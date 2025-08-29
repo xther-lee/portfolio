@@ -1,0 +1,23 @@
+/* Footer */
+.footer {
+  border-top: 5px solid #D9D9D9;
+  height: 110px;
+    .container {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: black;
+        text-decoration: underline;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p {
+        font-weight: 600;
+      }
+      .right-footer {
+        margin-top: 20px;
+      }
+    }
+} 

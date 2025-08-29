@@ -1,0 +1,48 @@
+/* 네비게이션 */
+.nav {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  .nav-logo .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    border: none;
+    background-color: transparent;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .git {
+      padding: 5px 15px;
+      background-color: #1B8242;
+      border-radius: 20px;
+      color: white;
+    }
+    a {
+      color: black;
+      font-weight: 600;
+    }
+  }
+  
+}

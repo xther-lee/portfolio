@@ -1,0 +1,65 @@
+.skill {
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .skills-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    }
+
+    .skills-track {
+    display: flex;
+    gap: 60px;
+    animation: scroll-left 20s linear infinite;
+    }
+
+    .skill-item {
+    position: relative;
+    flex: 0 0 auto; // 크기 고정
+    width: 100px;
+    height: 100px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+
+    .skill-name {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        white-space: nowrap;
+    }
+
+    &:hover .skill-name {
+        opacity: 1;
+    }
+    }
+
+    // 무한 가로 스크롤
+    @keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+    }
+
+}

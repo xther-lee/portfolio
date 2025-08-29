@@ -1,0 +1,269 @@
+/* 2025 포트폴리오 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #2b2a2a;
+  background-color: #fff;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%232e7d32"><text y="26" font-size="28">👆</text></svg>') 16 16, auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 링크와 버튼에 대한 커서 */
+a, button, .nav-link, .btn, .project-link, .social-link {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">👆</text></svg>') 16 16, pointer;
+}
+
+/* 입력 필드에 대한 커서 */
+input, textarea, select {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%232e7d32"><text y="26" font-size="28">✍️</text></svg>') 16 16, text;
+}
+
+/* 드래그 가능한 요소에 대한 커서 */
+.draggable {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">✋</text></svg>') 16 16, grab;
+}
+
+.draggable:active {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%232e7d32"><text y="26" font-size="28">✊</text></svg>') 16 16, grabbing;
+}
+
+/* 로딩 상태에 대한 커서 */
+.loading {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%23ff9800"><text y="26" font-size="28">⏳</text></svg>') 16 16, wait;
+}
+
+/* 비활성화된 요소에 대한 커서 */
+.disabled, [disabled] {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%23999"><text y="26" font-size="28">🚫</text></svg>') 16 16, not-allowed;
+}
+
+/* 확대/축소 가능한 요소에 대한 커서 */
+.zoomable {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">🔍</text></svg>') 16 16, zoom-in;
+}
+
+/* 스크롤 가능한 요소에 대한 커서 */
+.scrollable {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">📜</text></svg>') 16 16, auto;
+}
+
+/* 링크 호버 시 커서 */
+a:hover, button:hover, .nav-link:hover, .btn:hover, .project-link:hover, .social-link:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%231b5e20"><text y="26" font-size="28">👆</text></svg>') 16 16, pointer;
+}
+
+/* 프로필 카드 호버 시 커서 */
+.profile-card:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">✨</text></svg>') 16 16, pointer;
+}
+
+/* 프로젝트 카드 호버 시 커서 */
+.project-card:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">🚀</text></svg>') 16 16, pointer;
+}
+
+/* 스킬 카테고리 호버 시 커서 */
+.skill-category:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">💪</text></svg>') 16 16, pointer;
+}
+
+/* 햄버거 메뉴 호버 시 커서 */
+.hamburger:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">🍔</text></svg>') 16 16, pointer;
+}
+
+/* 폼 제출 버튼 호버 시 커서 */
+.btn-primary:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%231b5e20"><text y="26" font-size="28">📤</text></svg>') 16 16, pointer;
+}
+
+/* 연락처 아이콘 호버 시 커서 */
+.contact-icon:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="%234caf50"><text y="26" font-size="28">📞</text></svg>') 16 16, pointer;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* 컨테이너 */
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 햄버거 메뉴 */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* 섹션 공통 스타일 */
+.section {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #2e7d32;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #4caf50;
+}
+
+
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .home-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    justify-content: center;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+  }
+
+  .profile-card {
+    padding: 30px 20px;
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 2.5rem;
+  }
+}
+/* footer */
+/* .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.App > *:not(.footer) {
+  flex: 1; 
+} */
+

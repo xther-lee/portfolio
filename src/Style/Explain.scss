@@ -1,0 +1,64 @@
+.explain {
+    width: 100%;
+    height: 500px;
+    margin: 100px auto;
+    .txt {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 3.125rem;
+        white-space: nowrap;
+    }
+    .menu-box {
+        width: 60%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+    }
+    .txt-box {
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .title {
+            width: 50%;
+            text-align: center;
+        }
+    }
+    .tape-box {
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        button {
+            border: none;
+            background-color: transparent;
+        }
+    }
+    .project .sub {
+        color: #000;
+    }
+    .about .sub {
+        color: #fff;
+    }
+    .tape-rela {
+        position: relative;
+        display: inline-block;
+        .sub {
+            position: absolute;
+            top: 30%;      
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.125rem;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        &:hover .sub {
+            opacity: 1; 
+        }
+    }
+}
