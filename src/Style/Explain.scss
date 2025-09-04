@@ -1,7 +1,7 @@
 .explain {
     width: 100%;
     height: 500px;
-    margin: 100px auto;
+    margin: 100px auto; 
     .txt {
         text-align: center;
         font-weight: bold;
@@ -38,10 +38,10 @@
             background-color: transparent;
         }
     }
-    .project .sub {
+    .explain-project .sub {
         color: #000;
     }
-    .about .sub {
+    .explain-about .sub {
         color: #fff;
     }
     .tape-rela {

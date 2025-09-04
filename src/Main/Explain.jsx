@@ -48,7 +48,7 @@ export default function Explain() {
             <h2 className="title">About me</h2>
         </div>
         <div className="menu-box">
-            <div className="project tape-box">
+            <div className="explain-project tape-box">
                 <Link to='/project'>
                     <button>
                         <Tape className='tape-rela'
@@ -60,7 +60,7 @@ export default function Explain() {
                     </button>
                 </Link>
             </div>
-            <div className="about tape-box">
+            <div className="explain-about tape-box">
                 <Link to='/about'>
                     <button>
                         <Tape className='tape-rela'

@@ -1,0 +1,47 @@
+.project-sub {
+    width: 1400px;
+    height: 1600px;
+    margin: 0 auto;
+    .select-txt {
+        display: flex;
+        gap: 40px;
+        button {
+            border: none;
+            background-color: transparent;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 50px;
+            transition: all 0.2s;
+
+    &:hover {
+       color: #1B8242; 
+    }
+
+    &.active {
+      color: #1B8242; 
+    }
+        }
+    }
+    .project-list {
+        height: 1400px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 20px;
+        justify-content: space-between;
+        img {
+            width: 450px;
+            border-radius: 20px;
+            box-shadow: 0 2px 4px #ccc;
+        }
+        .txt-box {
+            margin-top: 20px;
+            h3 {
+                color: black;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

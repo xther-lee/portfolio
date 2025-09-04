@@ -11,6 +11,8 @@ import Skills from './Main/Skills';
 import Explain from './Main/Explain';
 import ProjectSub from './Project/ProjectSub';
 import ProjectDetail from './Project/ProjectDetail';
+import AboutInfo from './About/AboutInfo';
+import AboutPhoto from './About/AboutPhoto';
 
 /* 2025 포트폴리오 */
 function App() {
@@ -27,10 +29,21 @@ function App() {
             <Explain/>
             </>
             } />
-            <Route path="/project" element={<Project />} />
-        <Route path="/project" element={<ProjectSub />} />
-        <Route path="/project/:id" element={<ProjectDetail />} />
-          <Route path="/about" element={<About />} />
+            <Route path="/project" element={
+              <>
+              <Project />
+              <ProjectSub />
+              </>
+              } />
+          <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/about" element={
+            <>
+            <About />
+            <AboutInfo />
+            <AboutPhoto />
+            <Contact />
+            </>
+            } />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
