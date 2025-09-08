@@ -54,11 +54,13 @@
             transform: translateX(-50%);
             font-size: 1.125rem;
             font-weight: 500;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            opacity: 0; // 기본 상태
+            transition: opacity 0.1s ease-out;
+            &.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            }
         }
-        &:hover .sub {
-            opacity: 1; 
-        }
+            
     }
 }

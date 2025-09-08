@@ -13,15 +13,26 @@ import ProjectSub from './Project/ProjectSub';
 import ProjectDetail from './Project/ProjectDetail';
 import AboutInfo from './About/AboutInfo';
 import AboutPhoto from './About/AboutPhoto';
+// 다른 페이지로 이동 시 항상 맨 위에서 시작
+import ScrollToTop from './ScrollToTop';
 
 /* 2025 포트폴리오 */
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/" element={
+            <>
+            <Intro />
+            <Home />
+            <Skills/>
+            <Explain/>
+            </>
+            } />
+            <Route path="/portfolio" element={
             <>
             <Intro />
             <Home />

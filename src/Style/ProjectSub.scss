@@ -4,7 +4,7 @@
     margin: 0 auto;
     .select-txt {
         display: flex;
-        gap: 40px;
+        gap: 10px;
         button {
             border: none;
             background-color: transparent;
@@ -12,6 +12,7 @@
             font-weight: 600;
             margin-bottom: 50px;
             transition: all 0.2s;
+            padding: 15px;
 
     &:hover {
        color: #1B8242; 
@@ -31,6 +32,8 @@
         justify-content: space-between;
         img {
             width: 450px;
+            height: 300px;
+            object-fit: cover;
             border-radius: 20px;
             box-shadow: 0 2px 4px #ccc;
         }

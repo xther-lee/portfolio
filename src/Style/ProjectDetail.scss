@@ -1,5 +1,6 @@
 .project-detail {
     width: 100vw;
+    height: 90vh;
     .detail-container {
         width: 80%;
         margin: 0 auto;
@@ -8,7 +9,6 @@
             margin-top: 50px;
             width: 80%;
             .swiper-slide {
-                
                 display: flex;
                 justify-content: space-between;
             }
@@ -53,12 +53,13 @@
             display: flex;
             gap: 20px;
             align-items: center;
-            button {
+            button, .button {
                 padding: 10px;
                 border-radius: 10px;
                 border: none;
                 background-color: #1B8242;
                 color: white;
+                font-size: 14px;
                 a {
                     color: white;
                 }

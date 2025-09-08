@@ -1,10 +1,12 @@
 import '../Style/AboutInfo.scss'
 
+import mainphoto from '../img/KakaoTalk_20250901_164347079.jpg';
+
 const AboutInfo = () => {
     return (
         <div className="about-info">
             <div className="info-photo">
-                <img src="/img/KakaoTalk_20250901_164347079.jpg" alt="임시사진" />
+                <img src={mainphoto} alt="임시사진" />
             </div>
             <div className="info-ex">
                 저의 삶의 모토는 “맡은 일은 끝까지 책임진다.” 입니다. <br />

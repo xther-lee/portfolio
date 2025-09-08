@@ -8,12 +8,16 @@ const Header = () => {
             <nav className="navbar">
                 <div className="nav-container">
                 <div className="nav-logo">
-                    <Link to='/'><button className="logo-text">이에스더 | 프론트엔드</button></Link>
+                    <a href="https://xther-lee.github.io/portfolio/"  className='logo-text'>이에스더 | 프론트엔드</a>
                 </div>
                 <div className='nav-menu'>
-                    <Link to='/project'>Project</Link>
-                    <Link to='/about'>About me</Link>
-                    <a href="#" 
+                    <Link to='/project'>
+                        Project
+                    </Link>
+                    <Link to='/about'>
+                        About me
+                    </Link>
+                    <a href="https://github.com/xther-lee" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='git'>Github</a>

@@ -18,7 +18,7 @@ const ProjectDetail = () => {
         <div className="project-detail">
             <div className="detail-container">
                 <h2>{project.title}</h2>
-                 <Swiper
+                 {/* <Swiper
                     modules={[Pagination]}
                     spaceBetween={50}
                     slidesPerView={1}
@@ -34,7 +34,7 @@ const ProjectDetail = () => {
                     <h2 className="swiper-txt">Wireframe</h2>
                     <img src={project.swiperWireImg} alt="Wireframe" />
                 </SwiperSlide>
-                </Swiper>
+                </Swiper> */}
                 <div className="detail-info">
                     <table>
                         <tbody>
@@ -54,6 +54,10 @@ const ProjectDetail = () => {
                             <td>기여도</td>
                             <td>{project.contribute}</td>
                         </tr>
+                        <tr>
+                            <td>배포</td>
+                            <td>{project.deploy}</td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -61,7 +65,7 @@ const ProjectDetail = () => {
                     <p>{project.detail}</p>
                 </div>
                 <div className="detail-button">
-                    <button><a href={project.link} target='_blank' rel='noopener noreferrer'>사이트 더보기</a></button>
+                    <a href={project.link} className="button" target='_blank' rel='noopener noreferrer'>사이트 더보기</a>
                     <button onClick={() => navigate(-1)}>뒤로 가기</button>
                 </div>
             </div>
