@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.70940b19.css",
-    "main.js": "/portfolio/static/js/main.8aaadaad.js",
+    "main.css": "/portfolio/static/css/main.dba8552a.css",
+    "main.js": "/portfolio/static/js/main.e2129c1f.js",
     "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
     "static/media/photo-04.mp4": "/portfolio/static/media/photo-04.2b3fe13fde86c006a7c6.mp4",
     "static/media/mainCalendar.png": "/portfolio/static/media/mainCalendar.39df933d99d3ebc0cc88.png",
     "static/media/photo-06.JPG": "/portfolio/static/media/photo-06.3d8194c3336ec2b55f8e.JPG",
     "static/media/swiper-osullo02.png": "/portfolio/static/media/swiper-osullo02.cd9c8b0b8bce70357f3a.png",
+    "static/media/swiper-kolon02.png": "/portfolio/static/media/swiper-kolon02.c20a36486d831d0a65da.png",
     "static/media/left.png": "/portfolio/static/media/left.d4e6b1276eb15b56308b.png",
     "static/media/right.png": "/portfolio/static/media/right.a267dfb5a16b18d062f7.png",
     "static/media/photo-11.JPEG": "/portfolio/static/media/photo-11.71d3c3348815cc443f93.JPEG",
@@ -22,6 +23,7 @@
     "static/media/KakaoTalk_20250901_164347079.jpg": "/portfolio/static/media/KakaoTalk_20250901_164347079.5e26b829b07a762c0957.jpg",
     "static/media/project-the-edit.png": "/portfolio/static/media/project-the-edit.31d9763faee236b7f4d2.png",
     "static/media/project-kolon.png": "/portfolio/static/media/project-kolon.1848d25fc5efb77835c1.png",
+    "static/media/swiper-kolon01.png": "/portfolio/static/media/swiper-kolon01.95c193d14f47dc6f89c4.png",
     "static/media/swiper-supermatcha02.png": "/portfolio/static/media/swiper-supermatcha02.cd797044a15cd9459843.png",
     "static/media/photo-01.jpg": "/portfolio/static/media/photo-01.8882e7bb9be32873c703.jpg",
     "static/media/project-portfolio.png": "/portfolio/static/media/project-portfolio.cfb35afeec4c0724f81c.png",
@@ -39,12 +41,12 @@
     "static/media/tape10-first.png": "/portfolio/static/media/tape10-first.d32892a6193617c9b3ac.png",
     "static/media/skill-react.png": "/portfolio/static/media/skill-react.ad61e2d459499c4c5bb8.png",
     "index.html": "/portfolio/index.html",
-    "main.70940b19.css.map": "/portfolio/static/css/main.70940b19.css.map",
-    "main.8aaadaad.js.map": "/portfolio/static/js/main.8aaadaad.js.map",
+    "main.dba8552a.css.map": "/portfolio/static/css/main.dba8552a.css.map",
+    "main.e2129c1f.js.map": "/portfolio/static/js/main.e2129c1f.js.map",
     "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70940b19.css",
-    "static/js/main.8aaadaad.js"
+    "static/css/main.dba8552a.css",
+    "static/js/main.e2129c1f.js"
   ]
 }
