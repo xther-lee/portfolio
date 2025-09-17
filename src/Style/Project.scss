@@ -1,0 +1,24 @@
+.project {
+  height: 450px;
+  #container {
+    position: relative;
+    margin: auto;
+    width: 100vw;
+    height: 400px;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+  }
+
+  #text1, #text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+     margin-top: 10%;
+
+    font-size: 90px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+  }
+}
