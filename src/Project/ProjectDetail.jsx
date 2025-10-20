@@ -47,6 +47,9 @@ const ProjectDetail = () => {
         <div className="project-detail">
             <div className="detail-container">
                 <h2>{project.title}</h2>
+                <div className="detail-box">
+                    <p>{project.detail}</p>
+                </div>
                  <Swiper
                     modules={[Pagination]}
                     spaceBetween={50}
@@ -87,9 +90,6 @@ const ProjectDetail = () => {
                         </tr>
                         </tbody>
                     </table>
-                </div>
-                <div className="detail-box">
-                    <p>{project.detail}</p>
                 </div>
                 <div className="detail-button">
                     <a href={project.link} className="real-button" target='_blank' rel='noopener noreferrer'>제작사이트 보기</a>
