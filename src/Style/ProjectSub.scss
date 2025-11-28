@@ -1,7 +1,8 @@
 .project-sub {
-    width: 1400px;
-    height: 1600px;
+    width: 100vw;
+    min-height: 1600px;
     margin: 0 auto;
+    padding-bottom: 100px;
     .select-txt {
         display: flex;
         gap: 10px;
@@ -14,22 +15,22 @@
             transition: all 0.2s;
             padding: 15px;
 
-    &:hover {
-       color: #1B8242; 
-    }
+            &:hover {
+            color: #1B8242; 
+            }
 
-    &.active {
-      color: #1B8242; 
-    }
+            &.active {
+            color: #1B8242; 
+            }
         }
     }
     .project-list {
-        height: 1400px;
+        min-height: 1400px;
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         grid-template-rows: repeat(3, 1fr); 
         gap: 20px;
-        justify-content: space-between;
+        justify-content: center;
         img {
             width: 450px;
             height: 300px;
@@ -45,6 +46,49 @@
             }
             p {
                 font-size: 12px;
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        width: 100vw;
+        .select-txt {
+            gap: 0;
+            justify-content: center;
+            button {
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+        .project-list {
+            width: 100vw;
+            min-height: auto;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 80px;
+            .project-item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            img {
+                width: 250px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: 0 2px 4px #ccc;
+            }
+            .txt-box {
+                width: 74%;
+                margin-top: 20px;
+                h3 {
+                    color: black;
+                    font-size: 19px;
+                }
+                p {
+                    font-size: 12px;
+                }
             }
         }
     }

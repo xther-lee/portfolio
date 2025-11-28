@@ -169,88 +169,90 @@ a:hover, button:hover, .nav-link:hover, .btn:hover, .project-link:hover, .social
     height: 130vh;
     overflow: hidden;
     text-align: center;
+
     .txt {
-        position: relative;
-        z-index: 10;
-        margin-top: 30vh;
-        z-index: 50;
-        h2 {
+      position: relative;
+      z-index: 50;
+      margin-top: 30vh;
+
+      h2 {
         font-size: 9.5rem;
         color: black;
         line-height: 1;
-        }
-    }
-  .intro-img {
-    position: relative;
-    width: 90%;
-    height: 90%;
-
-    img {
-      position: absolute;
-      transition: all 1s ease;
-      opacity: 1;
+      }
     }
 
-    /* TOP */
-    .show-top { 
-      top: -60%; left: 45%; 
-      transform: translateX(-50%); 
-      opacity: 1; 
-      z-index: 1;
-    }
-    .hide-top { 
-      top: -100%; left: 50%; 
-      transform: translateX(-50%); 
-      opacity: 0; 
-    }
+    .intro-img {
+      position: relative;
+      width: 90%;
+      height: 90%;
 
-    /* BOTTOM */
-    .show-bottom { 
-      bottom: 60%; left: 50%; 
-      transform: translateX(-50%); 
-      opacity: 1; 
-      z-index: 10;
-    }
-    .hide-bottom { 
-      bottom: -100%; left: 45%; 
-      transform: translateX(-50%); 
-      opacity: 0; 
-    }
+      img {
+        position: absolute;
+        transition: all 1s ease;
+        opacity: 1;
+      }
 
-    /* LEFT */
-    .show-left { 
-      left: 0; top: -2%; 
-      transform: translateY(-50%); 
-      opacity: 1; 
-      z-index: 11;
-    }
-    .hide-left { 
-      left: -100%; top: 50%; 
-      transform: translateY(-50%); 
-      opacity: 0; 
-    }
+      /* TOP */
+      .show-top { 
+        top: -60%; left: 45%; 
+        transform: translateX(-50%); 
+        opacity: 1; 
+        z-index: 1;
+      }
+      .hide-top { 
+        top: -100%; left: 50%; 
+        transform: translateX(-50%); 
+        opacity: 0; 
+      }
 
-    /* RIGHT */
-    .show-right { 
-      right: 0; top: 0; 
-      transform: translateY(-50%); 
-      opacity: 1; 
-      z-index: 12;
-    }
-    .hide-right { 
-      right: -100%; top: 50%; 
-      transform: translateY(-50%); 
-      opacity: 0; 
+      /* BOTTOM */
+      .show-bottom { 
+        bottom: 60%; left: 50%; 
+        transform: translateX(-50%); 
+        opacity: 1; 
+        z-index: 10;
+      }
+      .hide-bottom { 
+        bottom: -100%; left: 45%; 
+        transform: translateX(-50%); 
+        opacity: 0; 
+      }
+
+      /* LEFT */
+      .show-left { 
+        left: 0; top: -2%; 
+        transform: translateY(-50%); 
+        opacity: 1; 
+        z-index: 11;
+      }
+      .hide-left { 
+        left: -100%; top: 50%; 
+        transform: translateY(-50%); 
+        opacity: 0; 
+      }
+
+      /* RIGHT */
+      .show-right { 
+        right: 0; top: 0; 
+        transform: translateY(-50%); 
+        opacity: 1; 
+        z-index: 12;
+      }
+      .hide-right { 
+        right: -100%; top: 50%; 
+        transform: translateY(-50%); 
+        opacity: 0; 
+      }
     }
   }
 }
 
-}
-@media (max-width: 768px) {
+/* 768px  */
+/* @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
-
   .nav-menu {
     position: fixed;
     top: 70px;
@@ -311,33 +313,4 @@ a:hover, button:hover, .nav-link:hover, .btn:hover, .project-link:hover, .social
   .section-title {
     font-size: 2rem;
   }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .btn {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-  }
-
-  .profile-card {
-    padding: 30px 20px;
-  }
-
-  .profile-avatar {
-    width: 100px;
-    height: 100px;
-    font-size: 2.5rem;
-  }
-}
+} */

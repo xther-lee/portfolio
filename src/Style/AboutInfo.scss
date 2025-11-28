@@ -1,22 +1,28 @@
 .about-info {
-    width: 1400px;
+    width: 70vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
     .info-photo {
-        width: 250px;
-        height: 300px;
+        width: 22vw;
+        height: 25vw;
         img {
             border-radius: 20px;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            width: 90%;
+            height: 90%;
+            object-fit: fill;
         }
     }
     .info-ex {
-        font-size: 20px;
+        font-size: clamp(1rem, 3vw, 1.2rem);
         font-weight: 600;
+        width: 60vw;
+    }
+    @media (max-width: 480px) {
+        .info-photo {
+            display: none;
+        }
     }
 }

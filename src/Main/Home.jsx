@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 import '../Style/Home.scss';
+import me from '../img/me.jpg';
 
 const Home = () => {
     return (
@@ -25,11 +26,7 @@ const Home = () => {
                 </div>
                 <div className="hero-image">
                     <div className="profile-card">
-                    <div className="profile-avatar">
-                        <span>👨‍💻</span>
-                    </div>
-                    <h3>웹 개발자</h3>
-                    <p>React • Node.js • JavaScript</p>
+                        <img src={me} alt="me" />
                     </div>
                 </div>
                 </div>

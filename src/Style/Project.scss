@@ -21,4 +21,10 @@
     text-align: center;
     font-weight: 700;
   }
+  @media (max-width: 480px) {
+    #text1, #text2 {
+      font-size: 50px;
+      margin-top: 50%;
+    }
+  }
 }

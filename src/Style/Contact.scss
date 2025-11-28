@@ -110,5 +110,16 @@
     border: none;
     padding: 10px;
   }
+  @media (max-width: 480px) {
+    .contact-content {
+      display: flex;
+      flex-flow: column;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+    .contact-items {
+      display: none;
+    }
+  }
 }
 

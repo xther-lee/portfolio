@@ -8,7 +8,7 @@ import '../Style/ProjectDetail.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// 데이터 값 있으면 버튼 나타남, 데이터 값 없으면 버튼 없어짐
+// 데이터 값 있으면 버튼 나타남, 데이터 값 없으면 버튼 없어짐 (원본페이지 있으면 버튼 나타남)
 function renderButton(label, condition, href, 
     { className = "button", style = {}, onClick } = {}) {
   if (!condition) return null; // 조건이 없으면 아예 렌더링 안됨 → 스타일도 적용 안됨

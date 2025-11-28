@@ -1,12 +1,18 @@
 .explain {
-    width: 100%;
+    width: 100vw;
     height: 500px;
     margin: 100px auto; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     .txt {
+        width: 80vw;
         text-align: center;
         font-weight: bold;
         margin-bottom: 3.125rem;
-        white-space: nowrap;
+        .ex-txt {
+            font-size: clamp(0.8rem, 2.5vw, 1.5rem);
+        }
     }
     .menu-box {
         width: 60%;
@@ -15,17 +21,17 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        
     }
     .txt-box {
-        margin-top: 150px;
+        width: 80%;
+        padding-top: 100px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 20px;
         .title {
-            width: 50%;
             text-align: center;
+            font-size: clamp(0.8rem, 5vw, 2rem);
+            white-space: nowrap;
         }
     }
     .tape-box {
@@ -61,6 +67,34 @@
             transform: translateX(-50%) translateY(0);
             }
         }
-            
+    }
+    @media (max-width: 480px) {
+        margin: 0;
+        .tape-rela {
+            pointer-events: none;
+        }
+        h2 .sub {
+            display: block; 
+            opacity: 1;
+            visibility: visible
+        }
+        .explain-project .tape-rela img {
+            content: url('../img/tape01.png');
+        }
+        .explain-about .tape-rela img {
+            content: url('../img/tape10.png');
+        }
+        .menu-box {
+            width: 100%;
+            gap: 0;
+        }
+        .tape-box {
+            display: block;
+            .tape {
+                img {
+                    width: 80%;
+                }
+            }
+        }
     }
 }

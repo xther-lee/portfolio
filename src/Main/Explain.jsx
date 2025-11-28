@@ -106,7 +106,7 @@ export default function Explain() {
   return (
     <div className="explain">
         <div className="txt">
-            <h2>Project에는 웹표준과 react,  cursor, copilot 등으로 만든 사이트와 작업과정이 기록되어 있습니다.<br/>
+            <h2 className="ex-txt">Project에는 웹표준과 react,  cursor, copilot 등으로 만든 사이트와 작업과정이 기록되어 있습니다.<br/>
             About me에서는 저의 소개와 가치관, 개발자로써 앞으로 나아갈 방향에 관하여 기록되어 있습니다.</h2>
         </div>
         <div className="txt-box">
@@ -115,7 +115,7 @@ export default function Explain() {
         </div>
         <div className="menu-box">
             <div className="explain-project tape-box">
-                <Link to='/project'>
+                <Link to='/project' className="project tape">
                     <button>
                         <Tape className='tape-rela'
                         images={[ 
@@ -127,7 +127,7 @@ export default function Explain() {
                 </Link>
             </div>
             <div className="explain-about tape-box">
-                <Link to='/about'>
+                <Link to='/about' className="about tape">
                     <button>
                         <Tape className='tape-rela'
                         images={[

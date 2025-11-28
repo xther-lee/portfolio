@@ -24,7 +24,6 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
         setSubmitMessage('');
-
         try {
             // EmailJS로 이메일 전송
             const result = await emailjs.sendForm(
@@ -61,7 +60,7 @@ const Contact = () => {
                                     <span className="contact-icon">📧</span>
                                     <div>
                                         <h4>Email</h4>
-                                        <p>flakdhkakfl@naver.com</p>
+                                        <p>1205est@naver.com</p>
                                     </div>
                                 </div>
                                 
